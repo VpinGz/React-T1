@@ -42,7 +42,7 @@ export function addCustomer(customer) {
     try {
       customer.IPAddress = "192.168.68.125";
       customer.URL = baseApiUrl;
-      customer.CompanyId = 1001;
+      customer.CompanyID = 1001;
       customer.user = "ORDER";
       console.log(customer)
       const res = await axios.post(`${baseApiUrl}/customer`, {
@@ -52,6 +52,7 @@ export function addCustomer(customer) {
           },
           body: JSON.stringify(customer)
       });
+     
       dispatch(loadCustomerByFormSuccess(res.data));
     } catch (error) {
       dispatch({ type: types.API_ERROR, payload: console.log(error) });

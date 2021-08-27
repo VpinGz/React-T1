@@ -52,6 +52,7 @@ export function addCustomer(customer) {
           },
           body: JSON.stringify(customer)
       });
+     
       dispatch(loadCustomerByFormSuccess(res.data));
     } catch (error) {
       dispatch({ type: types.API_ERROR, payload: console.log(error) });

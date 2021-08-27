@@ -22,8 +22,8 @@ const CustomerForm = () => {
     BillingAmphur:"",
     BillingProvince:"",
     BillingPostalCode:"",
-    CurrencyCode:"",
     TaxID : "",
+    CurrencyCode:"",
     BranchCode:""
   };
 

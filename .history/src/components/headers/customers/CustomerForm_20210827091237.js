@@ -14,7 +14,7 @@ import Form from 'react-bootstrap/Form';
 
 const CustomerForm = () => {
   const initalCustomer = {
-    CompanyId:null,
+    CompanyID:null,
     CustomerCode : "",
     CustomerName : "",
     CustomerType : "",
@@ -22,8 +22,8 @@ const CustomerForm = () => {
     BillingAmphur:"",
     BillingProvince:"",
     BillingPostalCode:"",
-    CurrencyCode:"",
     TaxID : "",
+    CurrencyCode:"",
     BranchCode:""
   };
 

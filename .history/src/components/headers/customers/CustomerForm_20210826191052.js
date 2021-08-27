@@ -14,17 +14,17 @@ import Form from 'react-bootstrap/Form';
 
 const CustomerForm = () => {
   const initalCustomer = {
-    CompanyId:null,
-    CustomerCode : "",
-    CustomerName : "",
-    CustomerType : "",
-    BillingAddress1:"",
-    BillingAmphur:"",
-    BillingProvince:"",
-    BillingPostalCode:"",
-    CurrencyCode:"",
-    TaxID : "",
-    BranchCode:""
+    CustomerCode : "01",
+    CustomerName : "111",
+    CustomerType : "111",
+    TaxID : "111",
+    CompanyID:null,
+    BillingAddress1:"111",
+    BillingAmphur:"111",
+    BillingProvince:"11",
+    BillingPostalCode:"11",
+    CurrencyCode:"11",
+    BranchCode:"11"
   };
 
   const [validated, setValidated] = useState(false);
