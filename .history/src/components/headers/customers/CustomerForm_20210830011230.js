@@ -89,8 +89,8 @@ const CustomerForm = () => {
   return (
     <>
     
-      <h1>เพิ่ม/แก้ไขข้อมูลลูกค้า</h1>
-      <h2>ข้อมูลลูกค้า</h2>
+      <h2>Customer Form</h2>
+      <h2>General Information</h2>
       
     <div>
       {/* <form onSubmit={handleSubmit}>

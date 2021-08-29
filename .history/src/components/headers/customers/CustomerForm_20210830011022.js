@@ -89,8 +89,8 @@ const CustomerForm = () => {
   return (
     <>
     
-      <h1>เพิ่ม/แก้ไขข้อมูลลูกค้า</h1>
-      <h2>ข้อมูลลูกค้า</h2>
+      <h2>Customer Form</h2>
+      <h2>General Information</h2>
       
     <div>
       {/* <form onSubmit={handleSubmit}>
@@ -343,133 +343,9 @@ const CustomerForm = () => {
          onChange={handleChange}
          />
       </Col>
-      <Form.Label column sm="2">
-      ที่อยู่ บรรทัด 1
-      </Form.Label>
-      <Col sm="3">
-        <Form.Control 
-        type="text"
-        name="BillingPostalCode"
-        value={Customer.BillingPostalCode}
-        onChange={handleChange}/>
-      </Col>
-      </Form.Group>
 
-      <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
       <Form.Label column sm="2">
       ที่อยู่ บรรทัด 2
-      </Form.Label>
-      <Col sm="3">
-        <Form.Control
-         required
-         type="text"
-         name="BillingAddress1"
-         value={Customer.BillingAddress1}
-         onChange={handleChange}
-         />
-      </Col>
-      <Form.Label column sm="2">
-      ที่อยู่ บรรทัด 2
-      </Form.Label>
-      <Col sm="3">
-        <Form.Control 
-        type="text"
-        name="BillingPostalCode"
-        value={Customer.BillingPostalCode}
-        onChange={handleChange}/>
-      </Col>
-      </Form.Group>
-
-      <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-      <Form.Label column sm="2">
-      อำเภอ/เขต
-      </Form.Label>
-      <Col sm="3">
-        <Form.Control
-         required
-         type="text"
-         name="BillingAddress1"
-         value={Customer.BillingAddress1}
-         onChange={handleChange}
-         />
-      </Col>
-      <Form.Label column sm="2">
-      อำเภอ/เขต
-      </Form.Label>
-      <Col sm="3">
-        <Form.Control 
-        type="text"
-        name="BillingPostalCode"
-        value={Customer.BillingPostalCode}
-        onChange={handleChange}/>
-      </Col>
-      </Form.Group>
-
-      <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-      <Form.Label column sm="2">
-      จังหวัด
-      </Form.Label>
-      <Col sm="3">
-        <Form.Control
-         required
-         type="text"
-         name="BillingAddress1"
-         value={Customer.BillingAddress1}
-         onChange={handleChange}
-         />
-      </Col>
-      <Form.Label column sm="2">
-      จังหวัด
-      </Form.Label>
-      <Col sm="3">
-        <Form.Control 
-        type="text"
-        name="BillingPostalCode"
-        value={Customer.BillingPostalCode}
-        onChange={handleChange}/>
-      </Col>
-      </Form.Group>
-
-      <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-      <Form.Label column sm="2">
-      รหัสไปรษณีย์
-      </Form.Label>
-      <Col sm="3">
-        <Form.Control
-         required
-         type="text"
-         name="BillingAddress1"
-         value={Customer.BillingAddress1}
-         onChange={handleChange}
-         />
-      </Col>
-      <Form.Label column sm="2">
-      รหัสไปรษณีย์
-      </Form.Label>
-      <Col sm="3">
-        <Form.Control 
-        type="text"
-        name="BillingPostalCode"
-        value={Customer.BillingPostalCode}
-        onChange={handleChange}/>
-      </Col>
-      </Form.Group>
-
-      <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-      <Form.Label column sm="2">
-      ประเทศ
-      </Form.Label>
-      <Col sm="3">
-        <Form.Control
-         required
-         type="text"
-         name="BillingAddress1"
-         value={Customer.BillingAddress1}
-         onChange={handleChange}
-         />
-      </Col>
-      <Form.Label column sm="2">
-      ประเทศ
       </Form.Label>
       <Col sm="3">
         <Form.Control 

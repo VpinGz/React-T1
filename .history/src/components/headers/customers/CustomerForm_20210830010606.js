@@ -89,8 +89,8 @@ const CustomerForm = () => {
   return (
     <>
     
-      <h1>เพิ่ม/แก้ไขข้อมูลลูกค้า</h1>
-      <h2>ข้อมูลลูกค้า</h2>
+      <h2>Customer Form</h2>
+      <h2>General Information</h2>
       
     <div>
       {/* <form onSubmit={handleSubmit}>
@@ -170,7 +170,7 @@ const CustomerForm = () => {
       
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
       <Form.Label column sm="2">
-        เลขประจำตัวผู้เสียภาษี
+        Tax ID
       </Form.Label>
       <Col sm="3">
       <Form.Control required 
@@ -183,7 +183,7 @@ const CustomerForm = () => {
       </Col>
 
       <Form.Label column sm="2">
-        สำนักงานใหญ่/สาขา
+        Head Office/Branch
       </Form.Label>
       <Col sm="3">
         <Form.Control 
@@ -194,7 +194,7 @@ const CustomerForm = () => {
       
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
       <Form.Label column sm="2">
-        ประเภทลูกค้า
+        Customer Type
       </Form.Label>
       <Col sm="3">
         <Form.Select aria-label="Default select example">
@@ -205,7 +205,7 @@ const CustomerForm = () => {
       </Col>
 
       <Form.Label column sm="2">
-        กลุ่มลูกค้า
+        Customer Group
       </Form.Label>
       <Col sm="3">
       <Form.Select aria-label="Default select example">
@@ -219,7 +219,7 @@ const CustomerForm = () => {
       
       <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
       <Form.Label column sm="2">
-        หน่วยเงิน
+        Currency
       </Form.Label>
       <Col sm="3">
       <Form.Select 
@@ -235,7 +235,7 @@ const CustomerForm = () => {
         </Form.Select>
       </Col>
       <Form.Label column sm="2">
-        เงื่อนไขการชำระเงิน
+        Payment Term
       </Form.Label>
       <Col sm="3">
       <Form.Select aria-label="Default select example">
@@ -249,7 +249,7 @@ const CustomerForm = () => {
       
       <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
       <Form.Label column sm="2">
-        ผู้ติดต่อ
+        Contact Name
       </Form.Label>
       <Col sm="3">
         <Form.Control 
@@ -258,7 +258,7 @@ const CustomerForm = () => {
         value={Customer.contactName}/>
       </Col>
       <Form.Label column sm="2">
-        อีเมล์ผู้ติดต่อ
+        Email
       </Form.Label>
       <Col sm="3">
         <Form.Control type="text" placeholder="example@gmail.com" />
@@ -267,13 +267,13 @@ const CustomerForm = () => {
       
       <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
       <Form.Label column sm="2">
-        เบอร์โทรศัพท์ผู้ติดต่อ 1  
+        Telephone No.1  
       </Form.Label>
       <Col sm="3">
         <Form.Control type="text" />
       </Col>
       <Form.Label column sm="2">
-        พนักงานผู้รับผิดชอบ
+        Sales PIC
       </Form.Label>
       <Col sm="3">
       <Form.Select aria-label="Default select example">
@@ -287,37 +287,23 @@ const CustomerForm = () => {
       
       <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
       <Form.Label column sm="2">
-        แฟ็กซ์
+        Fax
       </Form.Label>
       <Col sm="3">
         <Form.Control type="text" />
       </Col>
       <Form.Label column sm="2">
-        เว็บไซต์
+        Website
       </Form.Label>
       <Col sm="3">
         <Form.Control type="text" />
       </Col>
         </Form.Group>
 
-        <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-      <Form.Label column sm="2">
-        ราคา
-      </Form.Label>
-      <Col sm="3">
-      <Form.Select aria-label="Default select example">
-          <option>--เลือก--</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </Form.Select>
-      </Col>
-        </Form.Group>
-
-      <h2>รหัสบัญชี</h2>
+      <h2>Customer Account</h2>
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail" >
       <Form.Label column sm="2">
-        บัญชีลูกหนี้
+        Account Receivable
       </Form.Label>
       <Col sm="3">
       <Form.Select aria-label="Default select example">
@@ -329,10 +315,10 @@ const CustomerForm = () => {
       </Col>
         </Form.Group>
 
-       <h2>ที่อยู่</h2>
+       <h2>Address Information</h2>
         <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
       <Form.Label column sm="2">
-      ที่อยู่ บรรทัด 1
+      Billing Address
       </Form.Label>
       <Col sm="3">
         <Form.Control
@@ -343,133 +329,9 @@ const CustomerForm = () => {
          onChange={handleChange}
          />
       </Col>
-      <Form.Label column sm="2">
-      ที่อยู่ บรรทัด 1
-      </Form.Label>
-      <Col sm="3">
-        <Form.Control 
-        type="text"
-        name="BillingPostalCode"
-        value={Customer.BillingPostalCode}
-        onChange={handleChange}/>
-      </Col>
-      </Form.Group>
 
-      <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
       <Form.Label column sm="2">
-      ที่อยู่ บรรทัด 2
-      </Form.Label>
-      <Col sm="3">
-        <Form.Control
-         required
-         type="text"
-         name="BillingAddress1"
-         value={Customer.BillingAddress1}
-         onChange={handleChange}
-         />
-      </Col>
-      <Form.Label column sm="2">
-      ที่อยู่ บรรทัด 2
-      </Form.Label>
-      <Col sm="3">
-        <Form.Control 
-        type="text"
-        name="BillingPostalCode"
-        value={Customer.BillingPostalCode}
-        onChange={handleChange}/>
-      </Col>
-      </Form.Group>
-
-      <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-      <Form.Label column sm="2">
-      อำเภอ/เขต
-      </Form.Label>
-      <Col sm="3">
-        <Form.Control
-         required
-         type="text"
-         name="BillingAddress1"
-         value={Customer.BillingAddress1}
-         onChange={handleChange}
-         />
-      </Col>
-      <Form.Label column sm="2">
-      อำเภอ/เขต
-      </Form.Label>
-      <Col sm="3">
-        <Form.Control 
-        type="text"
-        name="BillingPostalCode"
-        value={Customer.BillingPostalCode}
-        onChange={handleChange}/>
-      </Col>
-      </Form.Group>
-
-      <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-      <Form.Label column sm="2">
-      จังหวัด
-      </Form.Label>
-      <Col sm="3">
-        <Form.Control
-         required
-         type="text"
-         name="BillingAddress1"
-         value={Customer.BillingAddress1}
-         onChange={handleChange}
-         />
-      </Col>
-      <Form.Label column sm="2">
-      จังหวัด
-      </Form.Label>
-      <Col sm="3">
-        <Form.Control 
-        type="text"
-        name="BillingPostalCode"
-        value={Customer.BillingPostalCode}
-        onChange={handleChange}/>
-      </Col>
-      </Form.Group>
-
-      <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-      <Form.Label column sm="2">
-      รหัสไปรษณีย์
-      </Form.Label>
-      <Col sm="3">
-        <Form.Control
-         required
-         type="text"
-         name="BillingAddress1"
-         value={Customer.BillingAddress1}
-         onChange={handleChange}
-         />
-      </Col>
-      <Form.Label column sm="2">
-      รหัสไปรษณีย์
-      </Form.Label>
-      <Col sm="3">
-        <Form.Control 
-        type="text"
-        name="BillingPostalCode"
-        value={Customer.BillingPostalCode}
-        onChange={handleChange}/>
-      </Col>
-      </Form.Group>
-
-      <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
-      <Form.Label column sm="2">
-      ประเทศ
-      </Form.Label>
-      <Col sm="3">
-        <Form.Control
-         required
-         type="text"
-         name="BillingAddress1"
-         value={Customer.BillingAddress1}
-         onChange={handleChange}
-         />
-      </Col>
-      <Form.Label column sm="2">
-      ประเทศ
+      Billing PostalCode
       </Form.Label>
       <Col sm="3">
         <Form.Control 

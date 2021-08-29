@@ -89,8 +89,8 @@ const CustomerForm = () => {
   return (
     <>
     
-      <h1>เพิ่ม/แก้ไขข้อมูลลูกค้า</h1>
-      <h2>ข้อมูลลูกค้า</h2>
+      <h2>Customer Form</h2>
+      <h2>General Information</h2>
       
     <div>
       {/* <form onSubmit={handleSubmit}>
@@ -457,7 +457,7 @@ const CustomerForm = () => {
 
       <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
       <Form.Label column sm="2">
-      ประเทศ
+      รหัสไปรษณีย์
       </Form.Label>
       <Col sm="3">
         <Form.Control
@@ -469,7 +469,7 @@ const CustomerForm = () => {
          />
       </Col>
       <Form.Label column sm="2">
-      ประเทศ
+      รหัสไปรษณีย์
       </Form.Label>
       <Col sm="3">
         <Form.Control 
