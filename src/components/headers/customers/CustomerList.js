@@ -42,7 +42,7 @@ const CustomerList = () => {
                 <td>{cus.CustomerName}</td>
                 <td>{cus.Telephone1}</td>
                 <td>
-                  {cus.CustomerBalance.toLocaleString({ minimumFractionDigits: 2 })}
+                  {/* {cus.CustomerBalance.toLocaleString({ minimumFractionDigits: 2 })} */}
                 </td>
                 <td>{cus.CurrencyCode}</td>
                 <td><button
